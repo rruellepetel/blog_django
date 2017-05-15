@@ -4,5 +4,10 @@
 body {
     h1 {
         color: $color;
+        background-color: whitesmoke;
+    }
+    h3 {
+        color : $color2;
+        background-color: lightyellow;
     }
 }

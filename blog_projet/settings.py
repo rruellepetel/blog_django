@@ -132,7 +132,7 @@ STATICFILES_FINDERS = [
 
 BOWER_INSTALLED_APPS = (
    'jquery',
-   'bootstrap',
+   'bootstrap-sass',
    'fontawesome'
 )
 
@@ -141,7 +141,8 @@ BOWER_COMPONENTS_ROOT = os.path.join(BASE_DIR, "static")
 SASS_PROCESSOR_ENABLED = True
 SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR, "static")
 SASS_PROCESSOR_INCLUDE_DIRS = [
-   os.path.join(BASE_DIR, "blog_projet/static/sass")
+   os.path.join(BASE_DIR, "blog_projet/static/sass"),
+   os.path.join(BASE_DIR, "static/bower_components/bootstrap-sass/assets/stylesheets")
 ]
 
 STATIC_URL = '/static/'
