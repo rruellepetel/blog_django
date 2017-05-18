@@ -25,8 +25,8 @@ class Post(models.Model):
 
     category = models.ForeignKey(Category)
 
-def __unicode__(self):
-    return self.title
+    def __unicode__(self):
+        return self.title
 
     class Meta:
         verbose_name = "Article"
