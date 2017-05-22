@@ -6,7 +6,6 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="{% sass_src 'sass/style.scss' %}">
-    <script type="text/javascript" src='{% static 'jquery/dist/jquery.js' %}'></script>
 </head>
 
 <body>
@@ -20,9 +19,10 @@
         {% endif %}
         {% block content %}
         {% endblock %}
-    </div>
+    <!-- </div> -->
 
 
+    <script type="text/javascript" src='{% static 'jquery/dist/jquery.js' %}'></script>
 </body>
 
 </html>

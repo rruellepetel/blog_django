@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     'post',
     'django_extensions',
     'sass_processor',
-    'djangobower'
+    'djangobower',
+    'bootstrap3',
+    'ckeditor'
 
 ]
 

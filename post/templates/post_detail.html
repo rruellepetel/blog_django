@@ -6,6 +6,9 @@
 <h1>{{post.title}}</h1>
 {% if request.user.is_authenticated and perms.post.change_post %}
 <a href="{% url 'post-edit' post.slug %}">Edit</a>
+{%if request.user.is_superuser %}
+<a href="{% url 'post-delete' post.slug %}">Delete</a>
+{% endif %}
 {% endif %}
 <h2>{{post.creation_date}}</h2>
 <p>{{post.body}}</p>

@@ -19,7 +19,7 @@ class Category(models.Model):
 
 class Post(models.Model):
     title = models.CharField(verbose_name= "Mon Post", max_length=100)
-    slug = AutoSlugField(populate_from='title', always_update=True)
+    slug = AutoSlugField(populate_from='title', always_update=True, unique_with=("title",))
     body = models.TextField(verbose_name="Contenu")
     creation_date = models.DateTimeField(auto_now_add=True)
 
