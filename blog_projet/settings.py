@@ -151,3 +151,5 @@ STATICFILES_DIRS = [
    os.path.join(BASE_DIR, "static"),
    os.path.join(BASE_DIR, 'blog_projet', "static"),
 ]
+
+LOGIN_URL = "/login"

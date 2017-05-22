@@ -3,6 +3,9 @@
 {% block title %}Liste des Articles{% endblock title %}
 
 {% block content %}
+{% if perms.post.add_post %}
+<a href="{% url 'post-create' %}">Création Article</a>
+{% endif %}
 <h1>Liste des Articles</h1>
 <form class="" action="" method="get">
    <select name="category" id="">

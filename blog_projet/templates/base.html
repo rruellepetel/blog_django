@@ -12,6 +12,12 @@
 <body>
 
     <div class="container">
+        {% if request.user.is_authenticated %}
+        Coucou {{request.user.username}}
+        <a href="{% url 'logout' %}">Logout</a>
+        {% else %}
+        <a href="{% url 'login' %}">login</a>
+        {% endif %}
         {% block content %}
         {% endblock %}
     </div>
