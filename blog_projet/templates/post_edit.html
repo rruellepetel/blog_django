@@ -12,10 +12,9 @@
 
 <div class="col-md-12">
 
-    <h3>Post Create</h3>
+    
 
     <form class="form" action="{% url 'post-create'%}" method="post">
-
         {% csrf_token %}
 
         {% bootstrap_form form %}
@@ -35,4 +34,8 @@
 </div>
 
 
+{% endblock %}
+
+{% block extra_script %}
+{{ form.media}}
 {% endblock %}

@@ -11,5 +11,5 @@
 {% endif %}
 {% endif %}
 <h2>{{post.creation_date}}</h2>
-<p>{{post.body}}</p>
+<p>{{post.body | safe}}</p>
 {% endblock content %}

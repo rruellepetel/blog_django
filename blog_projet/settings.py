@@ -155,3 +155,5 @@ STATICFILES_DIRS = [
 ]
 
 LOGIN_URL = "/login"
+
+# CKEDITOR_JQUERY_URL = '/static/jquery/dist/jquery.min.js'

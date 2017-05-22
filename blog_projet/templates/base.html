@@ -19,10 +19,12 @@
         {% endif %}
         {% block content %}
         {% endblock %}
-    <!-- </div> -->
+    </div>
 
 
     <script type="text/javascript" src='{% static 'jquery/dist/jquery.js' %}'></script>
+    {% block extra_script %}
+    {% endblock %}
 </body>
 
 </html>
